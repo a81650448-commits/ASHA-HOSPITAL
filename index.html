@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asha Hospital | Samur Bazar, Kushinagar</title>
+<meta name="description" content="Asha Hospital, Samur Bazar, Kushinagar. Book a doctor appointment and explore medicines, surgical products and orthopedic supports.">
+<style>
+:root{
+  --primary:#0b6b78; --secondary:#123d63; --accent:#e53935;
+  --light:#f4fbfc; --text:#18323b; --white:#fff; --muted:#64747b;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.55}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);box-shadow:0 2px 14px rgba(0,0,0,.08)}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{font-weight:800;font-size:25px;color:var(--secondary)}
+.logo span{color:var(--primary)}
+nav a{margin-left:20px;text-decoration:none;color:var(--text);font-weight:700}
+nav a:hover{color:var(--primary)}
+.hero{background:linear-gradient(135deg,#eafafb,#f7fbff);padding:72px 20px}
+.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#d9f3f4;color:var(--primary);padding:7px 12px;border-radius:30px;font-weight:700}
+h1{font-size:48px;line-height:1.08;margin:16px 0}
+h2{font-size:34px;margin:0 0 10px}
+.hero p{font-size:18px;color:#52666d}
+.btn{display:inline-block;padding:13px 20px;border-radius:9px;text-decoration:none;font-weight:800;border:0;cursor:pointer}
+.btn-primary{background:var(--primary);color:white}
+.btn-red{background:var(--accent);color:white}
+.btn-outline{border:2px solid var(--primary);color:var(--primary);background:white}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.hero-card{background:white;border-radius:18px;padding:12px;box-shadow:0 15px 45px rgba(18,61,99,.14)}
+.hero-card img{width:100%;display:block;border-radius:12px}
+section{padding:65px 20px}
+.container{max-width:1180px;margin:auto}
+.section-head{text-align:center;margin-bottom:32px}
+.section-head p{color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature,.card{background:white;border:1px solid #e2ecee;border-radius:15px;padding:22px;box-shadow:0 8px 25px rgba(0,0,0,.05)}
+.feature h3{margin-top:0;color:var(--secondary)}
+.appointment{background:var(--light)}
+.form{max-width:850px;margin:auto;background:#fff;padding:28px;border-radius:18px;box-shadow:0 10px 35px rgba(0,0,0,.08)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-weight:700;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd9dc;border-radius:8px;font-size:15px}
+textarea{min-height:105px;resize:vertical}
+.full{grid-column:1/-1}
+.form small{color:var(--muted)}
+.products{background:#fbfdfe}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:24px}
+.tab{padding:10px 15px;border-radius:30px;border:1px solid #cbdcdf;background:#fff;cursor:pointer;font-weight:700}
+.tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.product-card h3{margin:0 0 12px;color:var(--secondary)}
+.product-row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed #d5e0e2;padding:9px 0}
+.product-row:last-child{border-bottom:0}
+.price{font-weight:800;white-space:nowrap;color:var(--primary)}
+.note{background:#fff5f5;border-left:4px solid var(--accent);padding:12px 15px;border-radius:6px;margin-top:22px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{padding:25px;border-radius:15px;background:#f4fbfc}
+.contact-card a{color:var(--primary);font-weight:800}
+footer{background:#123d63;color:white;padding:30px 20px;text-align:center}
+footer p{margin:6px 0}
+.whatsapp{position:fixed;right:22px;bottom:22px;z-index:30;background:#25d366;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;text-decoration:none;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+@media(max-width:850px){
+  .hero-inner,.contact{grid-template-columns:1fr}
+  .features,.product-grid{grid-template-columns:1fr 1fr}
+  h1{font-size:38px}
+  nav a{margin-left:8px;font-size:13px}
+}
+@media(max-width:560px){
+  .grid,.features,.product-grid{grid-template-columns:1fr}
+  .nav{flex-direction:column;gap:8px}
+  nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+  nav a{margin:0}
+  h1{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">✚ <span>ASHA</span> HOSPITAL</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#appointment">Appointment</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <span class="badge">Care • Compassion • Commitment</span>
+      <h1>Quality Healthcare,<br>Closer to You.</h1>
+      <p><strong>Asha Hospital</strong> is located at <strong>Samur Bazar, Kushinagar, Uttar Pradesh</strong>. Use the online appointment form to send your consultation request directly to the hospital.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#appointment">Book Appointment</a>
+        <a class="btn btn-red" href="tel:+919598502437">Call Hospital</a>
+        <a class="btn btn-outline" href="#products">View Products</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="asha-products-poster.png" alt="Asha Hospital medicines, surgical products and orthopedic supports">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <h2>Hospital Information</h2>
+      <p>Essential information for patients and visitors.</p>
+    </div>
+    <div class="features">
+      <div class="feature"><h3>🏥 Hospital</h3><p><strong>Asha Hospital</strong><br>Samur Bazar, Kushinagar, Uttar Pradesh</p></div>
+      <div class="feature"><h3>👤 Owner</h3><p><strong>Sriram Sah</strong><br>Hospital administration and contact</p></div>
+      <div class="feature"><h3>📞 Contact</h3><p><a href="tel:+919598502437">9598502437</a><br>Call for appointment and enquiries.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="appointment" id="appointment">
+  <div class="container">
+    <div class="section-head">
+      <h2>Book a Doctor Appointment</h2>
+      <p>Fill in the details. Your appointment request will open in WhatsApp for confirmation.</p>
+    </div>
+    <form class="form" id="appointmentForm">
+      <div class="grid">
+        <div>
+          <label for="name">Patient Name *</label>
+          <input id="name" required placeholder="Enter patient name">
+        </div>
+        <div>
+          <label for="phone">Mobile Number *</label>
+          <input id="phone" required type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile number">
+        </div>
+        <div>
+          <label for="date">Preferred Date *</label>
+          <input id="date" required type="date">
+        </div>
+        <div>
+          <label for="time">Preferred Time *</label>
+          <input id="time" required type="time">
+        </div>
+        <div>
+          <label for="department">Department / Consultation *</label>
+          <select id="department" required>
+            <option value="">Select</option>
+            <option>General Consultation</option>
+            <option>Orthopaedics</option>
+            <option>Paediatrics</option>
+            <option>Gynaecology</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+        <div>
+          <label for="doctor">Preferred Doctor (optional)</label>
+          <input id="doctor" placeholder="Doctor name, if known">
+        </div>
+        <div class="full">
+          <label for="message">Reason / Additional Information</label>
+          <textarea id="message" placeholder="Briefly describe your consultation requirement"></textarea>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" type="submit">Send Appointment Request</button>
+        <a class="btn btn-outline" href="tel:+919598502437">Call Instead</a>
+      </div>
+      <small>Appointment requests are subject to hospital confirmation. This form does not guarantee an appointment until confirmed by the hospital.</small>
+    </form>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-head">
+      <h2>Medical Store & Healthcare Products</h2>
+      <p>Category-wise products and indicative prices.</p>
+    </div>
+    <div class="tabs">
+      <button class="tab active" onclick="showCategory('all',this)">All</button>
+      <button class="tab" onclick="showCategory('medicines',this)">Medicines</button>
+      <button class="tab" onclick="showCategory('surgical',this)">Surgical & Medical</button>
+      <button class="tab" onclick="showCategory('ortho',this)">Orthopedic</button>
+    </div>
+
+    <div class="product-grid">
+      <div class="card product-card" data-cat="medicines">
+        <h3>💊 Pain Relief & Fever</h3>
+        <div class="product-row"><span>Paracetamol 500 mg (10 tablets)</span><span class="price">₹15</span></div>
+        <div class="product-row"><span>Paracetamol 650 mg (10 tablets)</span><span class="price">₹25</span></div>
+        <div class="product-row"><span>Ibuprofen 400 mg (10 tablets)</span><span class="price">₹35</span></div>
+        <div class="product-row"><span>Diclofenac Gel (30 g)</span><span class="price">₹65</span></div>
+        <div class="product-row"><span>Aceclofenac + Paracetamol (10 tablets)</span><span class="price">₹45</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="medicines">
+        <h3>🤧 Cold, Cough & Allergy</h3>
+        <div class="product-row"><span>Cetirizine 10 mg (10 tablets)</span><span class="price">₹20</span></div>
+        <div class="product-row"><span>Levocetirizine 5 mg (10 tablets)</span><span class="price">₹25</span></div>
+        <div class="product-row"><span>Cough Syrup (100 ml)</span><span class="price">₹90</span></div>
+        <div class="product-row"><span>Lozenges (10)</span><span class="price">₹35</span></div>
+        <div class="product-row"><span>Saline Nasal Drops (10 ml)</span><span class="price">₹45</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="medicines">
+        <h3>🫗 Gastric & Digestive</h3>
+        <div class="product-row"><span>Pantoprazole 40 mg (10 tablets)</span><span class="price">₹35</span></div>
+        <div class="product-row"><span>Antacid Suspension (170 ml)</span><span class="price">₹110</span></div>
+        <div class="product-row"><span>ORS (1 sachet)</span><span class="price">₹25</span></div>
+        <div class="product-row"><span>Isabgol (100 g)</span><span class="price">₹120</span></div>
+        <div class="product-row"><span>Digestive Enzyme Syrup (200 ml)</span><span class="price">₹125</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="medicines">
+        <h3>🍊 Vitamins & Supplements</h3>
+        <div class="product-row"><span>Multivitamin (10 tablets)</span><span class="price">₹60</span></div>
+        <div class="product-row"><span>Vitamin C (10 tablets)</span><span class="price">₹40</span></div>
+        <div class="product-row"><span>Calcium + Vitamin D3 (10 tablets)</span><span class="price">₹70</span></div>
+        <div class="product-row"><span>Iron + Folic Acid (10 tablets)</span><span class="price">₹45</span></div>
+        <div class="product-row"><span>B-Complex (10 tablets)</span><span class="price">₹50</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="medicines">
+        <h3>🩺 Diabetes & Cardio Care</h3>
+        <div class="product-row"><span>Metformin 500 mg (10 tablets)</span><span class="price">₹30</span></div>
+        <div class="product-row"><span>Glimepiride 1 mg (10 tablets)</span><span class="price">₹40</span></div>
+        <div class="product-row"><span>Amlodipine 5 mg (10 tablets)</span><span class="price">₹25</span></div>
+        <div class="product-row"><span>Atorvastatin 10 mg (10 tablets)</span><span class="price">₹35</span></div>
+        <div class="product-row"><span>Aspirin 75 mg (10 tablets)</span><span class="price">₹20</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="surgical">
+        <h3>🩹 Wound Care</h3>
+        <div class="product-row"><span>Sterile Cotton 100 g</span><span class="price">₹45</span></div>
+        <div class="product-row"><span>Cotton Roll 500 g</span><span class="price">₹180</span></div>
+        <div class="product-row"><span>Gauze 10 × 10 cm</span><span class="price">₹10</span></div>
+        <div class="product-row"><span>Adhesive Bandage</span><span class="price">₹5–10</span></div>
+        <div class="product-row"><span>Crepe Bandage</span><span class="price">₹60–150</span></div>
+        <div class="product-row"><span>Roller Bandage</span><span class="price">₹30–80</span></div>
+        <div class="product-row"><span>Micropore Tape</span><span class="price">₹50–100</span></div>
+        <div class="product-row"><span>Surgical Dressing Pack</span><span class="price">₹50–150</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="surgical">
+        <h3>🧤 Disposable Products</h3>
+        <div class="product-row"><span>2 ml Disposable Syringe</span><span class="price">₹5</span></div>
+        <div class="product-row"><span>5 ml Disposable Syringe</span><span class="price">₹7</span></div>
+        <div class="product-row"><span>10 ml Disposable Syringe</span><span class="price">₹10</span></div>
+        <div class="product-row"><span>Disposable Gloves (pair)</span><span class="price">₹10–20</span></div>
+        <div class="product-row"><span>Surgical Mask</span><span class="price">₹5–15</span></div>
+        <div class="product-row"><span>Disposable Cap</span><span class="price">₹5–10</span></div>
+        <div class="product-row"><span>Disposable Shoe Cover (pair)</span><span class="price">₹5–10</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="surgical">
+        <h3>🩻 Basic Medical Equipment</h3>
+        <div class="product-row"><span>Digital Thermometer</span><span class="price">₹100–250</span></div>
+        <div class="product-row"><span>BP Monitor</span><span class="price">₹1,200–2,500</span></div>
+        <div class="product-row"><span>Pulse Oximeter</span><span class="price">₹500–1,200</span></div>
+        <div class="product-row"><span>Glucometer</span><span class="price">₹700–1,500</span></div>
+        <div class="product-row"><span>Nebulizer</span><span class="price">₹1,500–3,000</span></div>
+        <div class="product-row"><span>Hot Water Bag</span><span class="price">₹150–350</span></div>
+        <div class="product-row"><span>Ice Bag</span><span class="price">₹150–300</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="ortho">
+        <h3>🦴 Back & Waist Support</h3>
+        <div class="product-row"><span>Lumbar Support Belt</span><span class="price">₹350–700</span></div>
+        <div class="product-row"><span>LS Belt</span><span class="price">₹450–900</span></div>
+        <div class="product-row"><span>Abdominal Belt</span><span class="price">₹350–750</span></div>
+        <div class="product-row"><span>Maternity Support Belt</span><span class="price">₹500–1,000</span></div>
+        <div class="product-row"><span>Sacroiliac Support Belt</span><span class="price">₹500–1,000</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="ortho">
+        <h3>🦵 Knee Supports</h3>
+        <div class="product-row"><span>Elastic Knee Cap</span><span class="price">₹150–300</span></div>
+        <div class="product-row"><span>Knee Support with Patella Ring</span><span class="price">₹300–600</span></div>
+        <div class="product-row"><span>Hinged Knee Brace</span><span class="price">₹800–1,500</span></div>
+        <div class="product-row"><span>Knee Immobilizer</span><span class="price">₹700–1,400</span></div>
+        <div class="product-row"><span>Compression Knee Support</span><span class="price">₹300–700</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="ortho">
+        <h3>🦶 Ankle, Wrist & Elbow</h3>
+        <div class="product-row"><span>Ankle Support</span><span class="price">₹200–450</span></div>
+        <div class="product-row"><span>Ankle Brace</span><span class="price">₹400–800</span></div>
+        <div class="product-row"><span>Wrist Support</span><span class="price">₹200–450</span></div>
+        <div class="product-row"><span>Wrist Splint</span><span class="price">₹400–800</span></div>
+        <div class="product-row"><span>Tennis Elbow Support</span><span class="price">₹250–500</span></div>
+        <div class="product-row"><span>Elbow Support</span><span class="price">₹200–450</span></div>
+      </div>
+
+      <div class="card product-card" data-cat="ortho">
+        <h3>🧑‍⚕️ Other Orthopedic Products</h3>
+        <div class="product-row"><span>Cervical Collar</span><span class="price">₹150–400</span></div>
+        <div class="product-row"><span>Shoulder Immobilizer</span><span class="price">₹400–800</span></div>
+        <div class="product-row"><span>Arm Sling</span><span class="price">₹150–350</span></div>
+        <div class="product-row"><span>Clavicle Support</span><span class="price">₹300–600</span></div>
+        <div class="product-row"><span>Walker</span><span class="price">₹1,000–2,500</span></div>
+        <div class="product-row"><span>Walking Stick</span><span class="price">₹300–800</span></div>
+      </div>
+    </div>
+
+    <div class="note"><strong>Important:</strong> Product prices shown are indicative catalogue prices and should be verified against the current MRP and hospital/pharmacy selling price. Prescription medicines should be dispensed only against a valid prescription and according to applicable regulations.</div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contact Asha Hospital</h2>
+      <p>For appointments, product enquiries and hospital information.</p>
+    </div>
+    <div class="contact">
+      <div class="contact-card">
+        <h3>📍 Address</h3>
+        <p>Samur Bazar, Kushinagar,<br>Uttar Pradesh, India</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Samur+Bazar+Kushinagar" target="_blank">Open Location in Google Maps →</a>
+      </div>
+      <div class="contact-card">
+        <h3>📞 Hospital Contact</h3>
+        <p><strong>Owner:</strong> Sriram Sah</p>
+        <p><strong>Phone:</strong> <a href="tel:+919598502437">9598502437</a></p>
+        <a href="https://wa.me/919598502437" target="_blank">Chat on WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><strong>ASHA HOSPITAL</strong></p>
+  <p>Samur Bazar, Kushinagar, Uttar Pradesh</p>
+  <p>Owner: Sriram Sah | Phone: 9598502437</p>
+  <p>© 2026 Asha Hospital. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919598502437" target="_blank" aria-label="WhatsApp">☏</a>
+
+<script>
+function showCategory(cat, btn){
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.product-card').forEach(card=>{
+    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+  });
+}
+
+document.getElementById('appointmentForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
+  const department = document.getElementById('department').value;
+  const doctor = document.getElementById('doctor').value.trim() || 'Not specified';
+  const message = document.getElementById('message').value.trim() || 'None';
+
+  const text =
+`*Asha Hospital - Appointment Request*%0A%0A` +
+`Patient Name: ${encodeURIComponent(name)}%0A` +
+`Mobile: ${encodeURIComponent(phone)}%0A` +
+`Preferred Date: ${encodeURIComponent(date)}%0A` +
+`Preferred Time: ${encodeURIComponent(time)}%0A` +
+`Department: ${encodeURIComponent(department)}%0A` +
+`Preferred Doctor: ${encodeURIComponent(doctor)}%0A` +
+`Reason/Notes: ${encodeURIComponent(message)}%0A%0A` +
+`Please confirm the appointment.`;
+
+  window.open('https://wa.me/919598502437?text=' + text, '_blank');
+});
+</script>
+</body>
+</html>
