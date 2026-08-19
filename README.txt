@@ -1,26 +1,13 @@
-ASHA HOSPITAL WEBSITE — SHOP + PRESCRIPTION + PAYMENTS
-========================================================
+ASHA HOSPITAL — ONLINE MEDICINE HOME DELIVERY
+================================================
+Patients can browse products, add medicines to a cart, choose Home Delivery, enter address and place the order through WhatsApp.
 
-Features:
-- Product catalogue with categories
-- Add-to-cart and quantity controls
-- Cart saved in browser localStorage
-- Product checkout
-- Cash on Delivery option
-- Prescription upload field + WhatsApp order request
-- UPI QR generation
-- Doctor appointment request through WhatsApp
-- Hospital contact and location
+Payment: UPI 7007596728@ptyes or Cash on Delivery.
+Order confirmation: WhatsApp 9598502437.
 
-IMPORTANT BEFORE PUBLISHING:
-1. Replace YOUR-UPI-ID@BANK in index.html with Asha Hospital's actual verified UPI ID.
-2. The static website cannot permanently store prescription files or orders by itself.
-   The prescription form opens WhatsApp and asks the patient to send the actual file there.
-   For true online file storage/order management, connect a secure backend/database.
-3. Verify all medicine names, prices, MRP, delivery area and pharmacy/legal requirements.
-4. Prescription-only medicines must be dispensed only after appropriate prescription verification.
-5. Add actual doctor names, qualifications, consultation fees and schedules when available.
-
-GitHub Pages:
-Upload index.html and asha-products-poster.png to a GitHub repository, then enable
-Settings > Pages > Deploy from branch > main.
+Important:
+- Verify the UPI ID belongs to Asha Hospital before accepting live payments.
+- Static GitHub Pages does not securely store orders or prescription files.
+- Prescription-only medicines require appropriate prescription verification.
+- Verify current MRP, availability, delivery area/charges and applicable pharmacy requirements.
+- For a full production platform, connect a secure backend/database and admin panel.
