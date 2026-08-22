@@ -1,0 +1,16 @@
+{
+  "name": "SEWA HOSPITAL",
+  "short_name": "SEWA Hospital",
+  "description": "SEWA HOSPITAL - appointments, medicine ordering and home delivery.",
+  "start_url": "/ASHA-HOSPITAL/",
+  "scope": "/ASHA-HOSPITAL/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b6b78",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src":"/ASHA-HOSPITAL/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"/ASHA-HOSPITAL/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"/ASHA-HOSPITAL/icons/icon-512-maskable.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ]
+}
