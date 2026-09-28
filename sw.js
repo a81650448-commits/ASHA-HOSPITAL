@@ -1,4 +1,4 @@
-const CACHE = 'sewa-hospital-v2-20260928';
+const CACHE = 'sewa-hospital-v3-20260928';
 const APP_SHELL = [
   '/ASHA-HOSPITAL/',
   '/ASHA-HOSPITAL/index.html',
